@@ -1,5 +1,5 @@
 import App from "@/components/App/App";
-import toast from "@/containers/ToastCore/ToastClass";
+import toast from "@/ToastCore";
 
 export default {
   title: "Toast",
@@ -30,10 +30,10 @@ export default {
     animation: {
       control: {
         type: "inline-radio",
-        options: ["toast_from_top", "toast_from_bottom", "toast-from-left"],
+        options: ["toast_from_top", "toast_from_bottom", "toast-from-left", "toast-from-right"],
       },
     },
-    customTitle: {
+    title: {
       control: {
         type: "text",
       },
@@ -43,7 +43,7 @@ export default {
         type: "color",
       },
     },
-    customDescription: {
+    description: {
       control: {
         type: "text",
       },
@@ -77,9 +77,9 @@ ToastExample.args = {
   position: '',
   animation: '',
   padding: '',
-  customTitle: "",
+  title: "",
   titleColor: "",
-  customDescription: "",
+  description: "",
   descriptionColor: "",
   backgroundColor: "",
 }

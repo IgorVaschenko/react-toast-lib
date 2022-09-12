@@ -1,11 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import App from '@/components/App/App';
-import toast from "@/containers/ToastCore/ToastClass";
-import ToastContainer from "@/components/Toast/ToastContainer";
-
-ReactDOM.render(<App />, document.querySelector('#root'));
+import toast from '@/ToastCore'
+import ToastContainer from '@/components/ToastContainer'
 
 export {
     toast,

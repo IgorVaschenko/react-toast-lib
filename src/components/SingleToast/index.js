@@ -26,9 +26,9 @@ const SingleToast = (props) => {
         descriptionColor,
         description } = props
 
-    const deleteToasts = (event) => toast.deleteToast(event.target.id, true)
+    const deleteToasts = (event) => toast.deleteToast(event.target.id)
 
-    const dragToasts = (event) => toast.deleteToast(event.target.id, true);
+    const dragToasts = (event) => toast.deleteToast(event.target.id);
 
     return (
         <SingleToaster
